@@ -1,0 +1,191 @@
+{"intents": [
+    {"tag": "greeting",
+     "patterns": ["Hi", "How are you", "Is anyone there?", "Hello", "Good day"],
+     "responses": ["Hello, thanks for visiting", "Good to see you again", "Hi there, how can I help?"],
+     "context_set": ""
+    },
+
+
+    {"tag": "goodbye",
+     "patterns": ["Bye", "See you later", "Goodbye"],
+     "responses": ["See you later, thanks for visiting", "Have a nice day", "Bye! Come back again soon."]
+    },
+
+
+    {"tag": "thanks",
+     "patterns": ["Thanks", "Thank you", "That's helpful","okay","ok","yes you did","yes thanks","yes thank you","awww","so sweet of you","awww that's so sweet of you","thanks for being there"],
+     "responses": ["Happy to help!", "Any time!", "My pleasure!"]
+    },
+
+
+    {"tag": "angry",
+     "patterns": ["angry"],
+     "responses": ["I sense that you are angry today , what happened?", "Are you alright? You seem to be angry"],
+     "context_set": "angry"
+    },
+
+
+    {"tag": "fight",
+     "patterns": ["i had a fight","i fought with my friend","i have a fight with my friend","fight"],
+     "responses": ["Calm down mate.Anger is not an argument.", "Cool bruh. Anger doesnt solve you anything.","Calm down bud. Try to adopt an optimistic approach :)"],
+     "context_filter": "angry"
+    },
+
+
+    {"tag": "problem",
+     "patterns": ["i have so many problems in life"," i have a problem","my life is filled with problems","i am in trouble","problem","I am unable to solve my problems"],
+     "responses": ["Problems are not stop signs, they are guidelines.","You are a FIGHTER, and nothing can stop you from tackling your goals","You were given this life because you are strong enough to live it."],
+     "context_filter": "angry"
+    },
+
+
+    {"tag": "argument",
+     "patterns": ["argue","argument"," i had an argument","i lost an argument","i should've said what i wanted to in an argument","i am unable to argue","i am bad at arguing"],
+     "responses": ["Here's a word of enlightenment for you - Be calm in arguing for fierceness makes error a fault and truth discourtesy.","I'm sorry to hear so. But there goes the saying - It is better to lose the argument than lose the relationship :)","Remember the saying -  Say what you mean, but don’t say it mean :)","Let me crack you up, If you can’t say something nice, say it in French :D. Hope it made you smile!"],
+     "context_filter": "angry"
+    },
+
+
+    {"tag": "do",
+     "patterns": ["what can i do","what am i supposed to do with my life","what is to be done","i dont know what to do in my life","i am not sure what to do in life"],
+     "responses": ["In life, if you don’t risk anything, you risk everything.","Find and pursue your passion. If you really want to do something, you’ll find a way. If you don’t, you’ll find an excuse.","Even though there are no ways of knowing for sure, there are ways of knowing for pretty sure.","Life is short so cherish every moment","Life is 10% what happens to you and 90% how you react to it","Don't get disheartened. Sometimes it takes a good fall to really know where you stand"],
+     "context_filter": "angry"
+    },
+
+
+    {"tag": "sad",
+     "patterns": ["sad"], 
+     "responses": ["I sense that you are sad today , what happened?", "Are you alright? You seem to be sad","Oh bud, what's making you sad?"],
+     "context_set": "sad"
+    },
+
+
+    {"tag": "mistake",
+     "patterns": ["mistake","i made a big mistake","i committed a mistake","i made a blunder","blunder"], 
+     "responses": ["No matter how many mistakes you make or how slow you progress, you are still way ahead of everyone who isn’t trying."],
+     "context_filter": "sad"
+    },
+
+    {"tag": "give up",
+     "patterns": ["give up","gave up","i gave up on my efforts"], 
+     "responses": ["When you feel like giving up, remember why you held on for so long in the first place. Don't be discouraged. It's often the last key in the bunch that opens the lock.","The great man Thomas A. Edison said,\"Our greatest weakness lies in giving up.The most certain way to succeed is always to try just one more time.\"","Giving up doesn’t always mean you’re weak, sometimes it means you are strong enough and smart enough to let go and move on."],
+     "context_filter": "sad" 
+    },
+
+
+    {"tag": "depression",
+     "patterns": ["depression","i am depressed","depressed"],
+     "responses": ["A positive attitude gives you power over your circumstances instead of your circumstances having power over you.","\"Keep yourself busy if you want to avoid depression. For me, inactivity is the enemy.\" — Matt Lucas"],
+     "context_filter": "sad"
+    },
+   
+
+    {"tag": "fight",
+     "patterns": ["i had a fight","i fought with my friend","i have a fight with my friend"],
+     "responses": ["Don't be sad. Dont let anything bother you.","Experiencing sadness and anger can make you feel more creative, and by being creative you can get beyond your pain or negativity."],
+     "context_filter": "sad"
+    },
+
+    {"tag": "break up",
+        "patterns": ["break up","i had a break up","my girlfriend broke up with me","my boyfriend broke up with me","i broke up with my girlfriend","i broke up with my boyfriend"],
+        "responses": ["Some people are going to leave, but that’s not the end of your story. That’s the end of their part in your story.","Learn to love yourself first, instead of loving the idea of other people loving you :)","Love is about being with a person who makes you happy in a way nobody else can.","When you stop chasing the wrong things you give the right things a chance to catch you.","Don't be sad. Dont let anything bother you.","Don’t choose the one who is beautiful to the world,choose the one who makes your world beautiful."],
+        "context_filter": "sad"
+    },
+
+    {"tag": "money",
+        "patterns": ["no money","i dont have enough money","i do not earn much","i am unable to meet expenses"],
+        "responses": ["Happiness is not in the mere possession of money; it lies in the joy of achievement, in the thrill of creative effort.","Many people are so poor because the only thing they have is money.","Money cannot buy everything","If humans do not get what they desire, they must learn to be happy with what is in hand ;)"],
+        "context_filter": "sad"
+    },
+
+
+    {"tag": "fail",
+     "patterns": ["i failed in exam","i failed my friend"],
+     "responses": ["Dont let failure bother you"," An honourable man said failure is the stepping stone to success","Be patient, everything is coming together"],
+     "context_filter": "sad"
+    },
+
+
+    {"tag": "problem",
+     "patterns": ["i have so many problems in life"," i have a problem","my life is filled with problems","i am in trouble"],
+     "responses": ["We should not give up and we should not allow the problem to defeat us","Life is not a problem to be solved, but a reality to be experienced","Inside every problem lies an opportunity."],
+     "context_filter": "sad"
+    },
+
+
+    {"tag": "sick",
+     "patterns": ["i am sick","i have fever","i have flu","i am not well","sick","not well"],
+     "responses": ["Sorry to hear that","Take rest and have a speedy recovery","Take care mate","Hope you get well soon","It is just a passing phase. You will be back to being the energetic you! Take care."],
+     "context_filter": "sad"
+    },
+
+
+    {"tag": "do", 
+     "patterns": ["what can i do","what am i supposed to do","what is to be done"],
+     "responses": ["Our greatest weakness lies in giving up.SO don't :)","Nothing can dim the light that shines from within.Overcome the darkness","Nothing is permanent in this wicked world, not even our troubles."],
+     "context_filter": "sad"
+    },
+
+
+    {"tag": "so",
+     "patterns": ["is that so","what do you think about me","is it okay"],
+     "responses": ["You are one of the strongest people I know.","You make a bigger impact than you realize","I hope you are proud of yourself, because I am!"],
+     "context_filter": "sad"
+    },
+
+
+    {"tag": "okay",
+     "patterns": ["Thanks", "Thank you", "That's helpful","okay","ok","kk","k","kay","oh"],
+     "responses": ["Happy to help!", "Any time!", "My pleasure","Have a nice day", "Bye! Come back again soon."]
+    },
+
+
+    {"tag": "neutral",
+     "patterns": ["neutral"],
+     "responses": ["You seem to be content today.Can i tell a joke to crack you up?"],
+     "context_set": "neutral"
+    },
+
+    {"tag": "neutral",
+     "patterns": [ "^[0-9a-zA-z]*$"],
+     "responses": ["Being contended with life is the best way to live."],
+     "context_filter": "neutral"
+    },
+
+
+
+    {"tag": "joke",
+     "patterns": ["yes","yup","yeah","sure","yea"],
+     "responses": ["What's the difference between a northern fairytale and a southern fairytale? A northern fairytale begins \"Once upon a time ...\" A southern fairytale begins \"Y'all ain't gonna believe this shit ...\"","The first computer dates back to Adam and Eve. It was an Apple with limited memory, just one byte. And then everything crashed.","Entered what I ate today into my new fitness app and it just sent an ambulance to my house."],
+     "context_filter": "neutral"
+    },
+
+    {"tag": "jokereply",
+        "patterns": ["haha","thats funny","lol","haha that's a good one","good one","lmao","rofl"],
+        "responses": ["Glad I put a smile on your face :)","Happy to have made you laugh :D"],
+        "context_filter": "neutral"
+    },
+   
+
+
+    {"tag": "nojoke",
+     "patterns": ["no","nope","i dont want it","no please","no thanks"],
+     "responses": ["Its okay. Have a good day","Okay.Have a good day","Continue being the same happy and contended one that you are :)","Being contended with life is the best way to live."],
+     "context_filter": "neutral"
+    },
+
+
+    {"tag": "happy",
+     "patterns": ["happy"],
+     "responses": ["You seem to be happy :), anything interesting?","You look so bright, what made you so happy? :D"],
+     "context_set": "happy"
+    },
+
+
+    {"tag": "[ ^[0-9a-zA-z]*$ ]",
+     "patterns": [ "^[0-9a-zA-z]*$"],
+     "responses": ["Keep smiling like this always", "Be more energitic like this", "Share your happiness","Make others smile which makes you happier","Love is that condition in which the happiness of another person is essential to your own","I am happy that you are happy :)"],
+     "context_filter": "happy"
+    }
+]
+}
