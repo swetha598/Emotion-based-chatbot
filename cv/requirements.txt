@@ -16,7 +16,7 @@ MarkupSafe==1.1.0
 matplotlib
 
 nltk==3.4.1
-numpy==1.16.3
+numpy==1.22.0
 opencv-python==3.3.0.10
 pandas==0.24.2
 
